@@ -107,10 +107,26 @@ brew install mongodb
 # Node
 brew install node
 brew install n
+brew install yarn
 
-# Druapl
+# Heroku
+brew tap heroku/brew
+brew install heroku
+
+# Drupal
 brew install composer
 brew install drush
+
+# Caskroom
+brew tap caskroom/cask
+brew tap caskroom/versions
+# Applications
+brew cask install dropbox
+brew cask install firefox
+brew cask install google-chrome
+brew cask install spotify
+brew cask install sublime-text3
+brew cask install vlc
 
 # Remove outdated versions from the cellar.
 brew cleanup
