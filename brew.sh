@@ -125,7 +125,7 @@ brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
 brew cask install spotify
-brew cask install sublime-text3
+brew cask install sublime-text
 brew cask install vlc
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 brew cask install qlcolorcode

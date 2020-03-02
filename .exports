@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Make Sublime Text the default editor.
+export EDITOR='subl -w'

@@ -2,6 +2,8 @@
 
 # ~/.macos — https://mths.be/macos
 
+COMPUTER_NAME="TylerMac"
+
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
@@ -17,10 +19,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-#sudo scutil --set ComputerName "0x6D746873"
-#sudo scutil --set HostName "0x6D746873"
-#sudo scutil --set LocalHostName "0x6D746873"
-#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "0x6D746873"
+sudo scutil --set ComputerName "$COMPUTER_NAME"
+sudo scutil --set HostName "$COMPUTER_NAME"
+sudo scutil --set LocalHostName "$COMPUTER_NAME"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
@@ -538,6 +540,18 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 ###############################################################################
+# Terminal                                                                    #
+###############################################################################
+
+# Only use UTF-8 in Terminal.app
+defaults write com.apple.terminal StringEncodings -array 4
+
+# Appearance
+defaults write com.apple.terminal "Default Window Settings" -string "Pro"
+defaults write com.apple.terminal "Startup Window Settings" -string "Pro"
+defaults write com.apple.Terminal ShowLineMarks -int 0
+
+###############################################################################
 # Activity Monitor                                                            #
 ###############################################################################
 
@@ -626,6 +640,9 @@ defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2
 
 # Install Sublime Text settings
 cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+
+# Create terminal subl access
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
 ###############################################################################
 # Kill affected applications                                                  #
