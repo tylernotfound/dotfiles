@@ -125,8 +125,17 @@ brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
 brew cask install spotify
-brew cask install sublime-text
 brew cask install vlc
+brew cask install alfred
+brew cask install hazel
+# Development
+brew cask install sublime-text
+brew cask install textmate
+brew cask install sequel-pro
+brew cask install pg-commander
+brew cask install tower
+brew cask install sketch
+brew cask install rightfont
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 brew cask install qlcolorcode
 brew cask install qlimagesize
