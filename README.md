@@ -2,6 +2,8 @@
 - https://github.com/mathiasbynens/dotfiles
 - https://github.com/driesvints/dotfiles
 - https://driesvints.com/blog/getting-started-with-dotfiles/
+- https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
+- https://github.com/webpro/dotfiles/
 
 ## Fresh install flow for macOS
 
@@ -16,7 +18,7 @@ Copy your public and private SSH keys to `~/.ssh` and make sure they're set to `
 
 ### Pull down the dotfiles repo
 ```
-git clone https://github.com/tylerxo/dotfiles.git ~./dotfiles && cd ~/.dotfiles
+cd; git clone https://github.com/tylerxo/dotfiles.git .dotfiles && cd ~/.dotfiles
 ```
 
 ### Run `brew.sh` to install packages and applications
