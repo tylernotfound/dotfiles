@@ -38,6 +38,16 @@ source link.sh
 
 After running all of these steps, restart the computer.
 
+### Taking ownership of `n`
+Steps outlined here: https://github.com/tj/n#installation
+```
+# make cache folder (if missing) and take ownership
+sudo mkdir -p /usr/local/n
+sudo chown -R $(whoami) /usr/local/n
+# take ownership of node install destination folders
+sudo chown -R $(whoami) /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share
+```
+
 ## Maintaining Dotfiles
 - When installing a new app, tool or font, try to install it with Homebrew and add it to your Brewfile
 - When configuring a new app make sure to run mackup backup to save your preferences
