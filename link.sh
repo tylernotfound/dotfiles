@@ -5,7 +5,6 @@ ln -sv "~/.dotfiles/.editorconfig" ~
 ln -sv "~/.dotfiles/.exports" ~
 ln -sv "~/.dotfiles/.hushlogin" ~
 ln -sv "~/.dotfiles/.inputrc" ~
-ln -sv "~/.dotfiles/.macos" ~
 ln -sv "~/.dotfiles/.screenrc" ~
 ln -sv "~/.dotfiles/.wgetrc" ~
 ln -sv "~/.dotfiles/.zshrc" ~
