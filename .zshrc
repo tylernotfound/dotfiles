@@ -2,4 +2,4 @@
 export DOTFILES=$HOME/.dotfiles
 
 # Homebrew sbin formulae
-export PATH="/usr/local/sbind:PATH"
+export PATH="/usr/local/sbin:PATH"
