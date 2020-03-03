@@ -10,6 +10,7 @@ function doIt() {
     --exclude "init/" \
     --exclude ".gitignore/" \
 		--exclude "link.sh" \
+    --exclude "brew.sh" \
 		--exclude "bootstrap.sh" \
 		--exclude "README.md" \
 		-avh --no-perms . ~;
