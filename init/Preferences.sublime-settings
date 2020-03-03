@@ -11,7 +11,7 @@
     ".firebase/*"
   ],
   "close_windows_when_empty": false,
-  "color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+  "color_scheme": "Packages/Monokai++/themes/Monokai++.tmTheme",
   "detect_indentation": false,
   "draw_indent_guides": false,
   "folder_exclude_patterns":
