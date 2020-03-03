@@ -1,0 +1,6 @@
+[url "https://github.com/"]
+	insteadOf = gh:
+
+[user]
+	email = hello@tylerbuilds.co
+	name = Tyler Smith
