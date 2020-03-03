@@ -39,3 +39,6 @@ ME_EMOJI=(🔥 💸 💵 🙈 🤔 😤 ✨ ☔ 🌧 🍕 🍺 🍩 ☕ ⚔);
 RANDOM_ME_EMOJI=${ME_EMOJI[$((RANDOM%14))]};
 export PS1="\W $RANDOM_ME_EMOJI  ";
 export PROMPT_COMMAND='update_terminal_cwd; echo -ne "\033]0;${RANDOM_ME_EMOJI##*/}\007"';
+
+# Homebrew sbin formulae
+export PATH="/usr/local/sbin:PATH"
