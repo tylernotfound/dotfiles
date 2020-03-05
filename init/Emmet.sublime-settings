@@ -1,0 +1,19 @@
+{
+  "syntaxProfiles": {
+    "html": {
+      "attr_quotes": "single"
+    },
+    "es6": {
+      "attr_quotes": "single"
+    },
+    "js": {
+      "attr_quotes": "single"
+    },
+    "jsx": {
+      "attr_quotes": "single"
+    },
+    "JavaScript (Babel)": {
+      "attr_quotes" : "single"
+    }
+  }
+}
